@@ -1,0 +1,26 @@
+<Page
+    x:Class="pract9.AddExperimentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Padding="20">
+
+        <StackPanel>
+
+            <TextBox Header="Name"
+                     Text="{x:Bind VM.Name, Mode=TwoWay}"/>
+
+            <TextBox Header="Used Material"
+                     Text="{x:Bind VM.UsedMaterial, Mode=TwoWay}"/>
+
+            <TextBox Header="Result"
+                     Text="{x:Bind VM.Result, Mode=TwoWay}"/>
+
+            <Button Content="Add"
+                    Margin="0,10,0,0"
+                    Click="Add_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
